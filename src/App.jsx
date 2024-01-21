@@ -4,6 +4,8 @@ import { createBrowserRouter } from "react-router-dom";
 import Home from './components/Home/Home';
 import Main from './components/layouts/Main/Main';
 import AppliedJobs from './components/AppliedJobs/AppliedJobs';
+import AboutUs from './components/AboutUS/AboutUs';
+import ContactUs from './components/ContactUs/ContactUs';
 
 
 function App() {
@@ -25,6 +27,14 @@ function App() {
             {
                 path:'applied-jobs',
                 element:<AppliedJobs></AppliedJobs>
+            },
+            {
+              path:'about-us',
+              element:<AboutUs></AboutUs>
+            },
+            {
+              path:'contact-us',
+              element:<ContactUs></ContactUs>
             }
         ]
     }
